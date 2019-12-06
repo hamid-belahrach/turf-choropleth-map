@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="./resources/css/material-dashboard.css?v=2.1.1" rel="stylesheet"/>
+<link href="./resources/css/custom.css" rel="stylesheet"/>
+<link href="./resources/css/map_style.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="resources/js/moment.min.js"></script>
+<script type="text/javascript" src="resources/js/moment-locale-fr.js"></script>
+<script src="resources/js/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+<body>
+    <div class="container">
+        <div class="pickers row">
+            <div class='offset-sm-8 col-sm-2'>
+                <div class="form-group">
+                    <div class='input-group date flatpicker' id='datepicker1'>
+                        <input type='text' class="form-control" data-input>
+                        <i class="material-icons" data-toggle>event</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-sm-2'>
+                <div class="form-group flatpicker">
+                    <div class='input-group date flatpicker' id='datepicker2'>
+                        <input type='text' class="form-control" data-input>
+                        <i class="material-icons" data-toggle>event</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="choroplethmap"></div>
+        </div>
+    </div>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="resources/js/d3-tip.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js'></script>
+    <script lang='babel' type='text/babel' src="./resources/js/script.js"></script>
+</body>
+</html>

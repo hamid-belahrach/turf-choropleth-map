@@ -1,0 +1,14 @@
+.input-group i {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#choroplethmap {
+    display: block;
+    margin: 100px auto;
+}
+
+.pickers {
+    margin: 40px auto;
+}
